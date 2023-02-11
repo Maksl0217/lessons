@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задача 5</title>
+</head>
+
+<body>
+
+  <script>
+    // Задача 5. Дано довжину у сантиметрах.
+    // Визначати скільки це метрів і кілометрів.
+
+    let sm = parseInt(prompt("Введіть довжину у сантиметрах"));
+
+    let metr = sm / 100;
+    let km = sm / 100000;
+
+    document.write(`Довжина у метрах = ${metr.toFixed(2)} <br/>`);
+    document.write(`Довжина у км  = ${km.toFixed(2)} <br/>`);
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задача 1</title>
+</head>
+
+<body>
+
+  <script>
+    // Задача 1 Обчислити значення виразів
+
+
+    let a = parseFloat(prompt('Введіть перше число'))
+    let b = parseFloat(prompt('Введіть друге число'))
+    let c = parseFloat(prompt('Введіть третє число'))
+
+    let s1 = a + 12 + b
+    let s2 = Math.sqrt((a + b) / (2 * a))
+    let s3 = Math.cbrt((a + b) * c)
+    let s4 = Math.sin(a / (-b))
+
+    document.write(`Значення першого виразу = ${s1.toFixed(2)} <br>`)
+    document.write(`Значення другого виразу = ${s2.toFixed(2)} <br/>`);
+    document.write(`Значення третього виразу = ${s3.toFixed(2)} <br/>`);
+    document.write(`Значення четвертого виразу = ${s4.toFixed(2)} <br/>`);
+
+
+  </script>
+
+</body>
+
+</html>

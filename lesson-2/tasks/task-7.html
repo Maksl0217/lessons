@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задача 7</title>
+</head>
+
+<body>
+
+  <script>
+    // Задача 7. З клавіатури вводяться вартість товару 
+    // та кількість одиниць 3 товарів.Обчислити вартість
+    // кожного товару окремо та загальну вартість.Вивести
+    // чек(як у супермаркеті) використовуючи елементи розмітки.
+
+
+
+    let priceFirstProduct = prompt('Введіть вартісь першого продукта')
+    let quantityFirstProduct = prompt('Введіть кількість першого продукта')
+    let priceSecondProduct = prompt('Введіть вартісь другого продукта')
+    let quantitySecondProduct = prompt('Введіть кількість другого продукта')
+    let priceThirdProduct = prompt('Введіть вартісь третього продукта')
+    let quantityThirdProduct = prompt('Введіть кількість третього продукта')
+
+    let totalPriceFirstProduct = priceFirstProduct * quantityFirstProduct
+    let totalPriceSecondProduct = priceSecondProduct * quantitySecondProduct
+    let totalPriceThirdProduct = priceThirdProduct * quantityThirdProduct
+
+    let totalPriceAllProducts = totalPriceFirstProduct + totalPriceSecondProduct + totalPriceThirdProduct
+
+    document.write(`Вартість першого товару = ${totalPriceFirstProduct.toFixed(2)} <br>`)
+    document.write(`Вартість другого товару = ${totalPriceSecondProduct.toFixed(2)} <br/>`);
+    document.write(`Вартість третього товару = ${totalPriceThirdProduct.toFixed(2)} <br/>`);
+    document.write(`Вартість всіх товарів = ${totalPriceAllProducts.toFixed(2)} <br/>`);
+
+
+  </script>
+
+</body>
+
+</html>

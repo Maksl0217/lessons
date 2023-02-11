@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задача 6</title>
+</head>
+
+<body>
+
+  <script>
+    // Задача 6. Дано кількість секунд, що пройшла від 
+    // початку доби.Визначити скільки це годин і хвилин.
+
+    let seconds = parseInt(prompt("Введіть кількість секунд, що пройшла від початку доби"));
+    let minuts = seconds / 60;
+    let hours = minuts / 60;
+
+    document.write(`Значення в хвилинах = ${minuts.toFixed(2)} <br/>`);
+    document.write(`Значення в годинах = ${hours.toFixed(2)} <br/>`);
+
+  </script>
+
+</body>
+
+</html>
