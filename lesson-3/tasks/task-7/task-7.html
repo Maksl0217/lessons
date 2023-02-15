@@ -12,11 +12,23 @@
 </head>
 
 <body>
-  <h1></h1>
+  <h1>7. З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься</h1>
 
   <script>
 
+    const userValue = parseInt(prompt("Введіть номер місяця."));
 
+    if (userValue == 12 || userValue <= 2) {
+      document.write('Номер місяця відноситься до зими.')
+    } else if (userValue <= 5) {
+      document.write('Номер місяця відноситься до весни.')
+    } else if (userValue <= 8) {
+      document.write('Номер місяця відноситься до літа.')
+    } else if (userValue <= 11) {
+      document.write('Номер місяця відноситься до осіні.')
+    } else {
+      document.write('Введіть число від 1 до 12.')
+    }
 
   </script>
 

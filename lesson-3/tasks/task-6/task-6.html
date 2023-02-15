@@ -12,10 +12,42 @@
 </head>
 
 <body>
-  <h1></h1>
+  <h1>6. З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.</h1>
 
   <script>
 
+    const userValue = parseInt(prompt('Введіть номер дня тижня'));
+    let dayValue = "";
+
+    switch (userValue) {
+      case 1:
+        dayValue = 'Понеділок';
+        break;
+      case 2:
+        dayValue = 'Вівторок';
+        break;
+      case 3:
+        dayValue = 'Середа';
+        break;
+      case 4:
+        dayValue = 'Четвер';
+        break;
+      case 5:
+        dayValue = "П'ятниця";
+        break;
+      case 6:
+        dayValue = 'Субота';
+        break;
+      case 7:
+        dayValue = 'Неділя';
+        break;
+
+      default:
+        dayValue = 'Введіть дані від 1 до 7.';
+        break;
+    }
+
+    document.write(`${dayValue}`)
 
 
   </script>

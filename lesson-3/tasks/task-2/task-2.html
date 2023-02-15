@@ -12,11 +12,23 @@
 </head>
 
 <body>
-  <h1></h1>
+  <h1>2. З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці,
+    інакше, якщо
+    ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.</h1>
 
   <script>
 
+    const productPrice = parseFloat(prompt("Введіть цінy товару "));
+    const quantityMoney = parseFloat(prompt("Введіть кількість грошей"));
+    const lotteryValue = 4;
 
+    if (quantityMoney < productPrice) {
+      document.write(`Покупку відхилено`);
+    } else if (quantityMoney >= productPrice + lotteryValue) {
+      document.write(`Покупку задовільнено, не бажаєте придбати лотерейний квиток за ${lotteryValue} грн`);
+    } else {
+      document.write(`Покупку задовільнено`);
+    }
 
   </script>
 

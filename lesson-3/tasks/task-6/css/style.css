@@ -2,10 +2,11 @@ body {
   background: #2c2c2c;
   color: beige;
   padding: 40px;
+  font-size: 20px;
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 26px;
   margin-bottom: 30px;
 }
 

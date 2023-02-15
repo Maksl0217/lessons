@@ -12,11 +12,25 @@
 </head>
 
 <body>
-  <h1></h1>
+  <h1>5. З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль).
+    Вивести на екран назву транспортного засобу, яким він може керувати.</h1>
 
   <script>
 
+    const userCategory = prompt("Введіть назвy категорії водія (латиницею).")
+    const categoryA = 'A'
+    const categoryB = 'B'
+    const categoryC = 'C'
 
+    if (userCategory.toUpperCase() === categoryA) {
+      document.write('Ви можете керувати мотоциклом.')
+    } else if (userCategory.toUpperCase() === categoryB) {
+      document.write('Ви можете керувати легковим автомобілем.')
+    } else if (userCategory.toUpperCase() === categoryC) {
+      document.write('Ви можете керувати вантажним автомобілем.')
+    } else {
+      document.write('Введені не коректні дані.')
+    }
 
   </script>
 

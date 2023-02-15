@@ -19,21 +19,16 @@
 
     const firstChild = prompt("Введіть ім'я першої дитини");
     const secondChild = prompt("Введіть ім'я другої дитини");
-    // const firstChildquantityCandies = parseInt(prompt("Введіть кількість цукерок першої дитини"));
-    // const secondChildquantityCandies = parseInt(prompt("Введіть кількість цукерок другої дитини"));
     const firstChildquantityCandies = parseInt(prompt(`Введіть кількість цукерок ${firstChild}`));
     const secondChildquantityCandies = parseInt(prompt(`Введіть кількість цукерок ${secondChild}`));
 
     if (firstChildquantityCandies > secondChildquantityCandies) {
       document.write(`${firstChild} має більше конфет ніж ${secondChild}`);
+    } else if (firstChildquantityCandies == secondChildquantityCandies) {
+      document.write(`Діти мають однакову кількість конфет`);
     } else {
       document.write(`${secondChild} має більше конфет ніж ${firstChild}`);
     }
-
-    document.write(`Сума чисел = ${sumNumbers} <br/>`);
-    document.write(`Добуток чисел = ${multiplicationNumbers} <br/>`);
-    document.write(`Частка чисел = ${divisionNumbers} <br/>`);
-
 
   </script>
 

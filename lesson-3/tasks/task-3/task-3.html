@@ -12,11 +12,26 @@
 </head>
 
 <body>
-  <h1></h1>
+  <h1>3. Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.</h1>
 
   <script>
 
+    const minValueNum = 1;
+    const maxValueNum = 5;
+    const numValue = Math.floor(Math.random() * (maxValueNum - minValueNum + 1)) + minValueNum;
 
+    let userValueNum = parseInt(prompt('Спробуйте вгадати число від 1 до 5 за 2 спроби.'))
+
+    if (userValueNum == numValue) {
+      document.write('Ви вгадали з першого разу')
+    } else {
+      userValueNum = parseInt(prompt('Ви не вгадали. Лишилося одна спроба. Введіть інше число'))
+      if (userValueNum == numValue) {
+        document.write('Ви вгадали з другого разу')
+      } else {
+        document.write('Ви не вгадали, спробуйте іншим разом)')
+      }
+    }
 
   </script>
 

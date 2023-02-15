@@ -12,11 +12,34 @@
 </head>
 
 <body>
-  <h1></h1>
+  <h1>4. З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом,
+    працівником, пенсіонером).</h1>
 
   <script>
 
+    const userAge = parseInt(prompt("Введіть свій вік"));
+    const childe = 7;
+    const schoolboy = 17;
+    const student = 23;
+    const worker = 60;
 
+    let userAgeResult = '';
+
+    switch (true) {
+      case (userAge <= childe): userAgeResult = `Ви дитина у садочку`;
+        break
+      case (userAge <= schoolboy): userAgeResult = `Ви школяр`;
+        break
+      case (userAge <= student): userAgeResult = `Ви студент`;
+        break
+      case (userAge < worker): userAgeResult = `Ви працівник`;
+        break
+      case (userAge >= worker): userAgeResult = `Ви пенсіонер`;
+        break
+      default: userAgeResult = (`error`)
+
+    }
+    document.write(`${userAgeResult}`)
 
   </script>
 
