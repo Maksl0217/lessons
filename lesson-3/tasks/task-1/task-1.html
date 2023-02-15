@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/icon/favicon.ico" />
+  <link rel="stylesheet" href="css/nullstyle.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>ДЗ-3</title>
+</head>
+
+<body>
+  <h1>1. З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої
+    кількість цукерок є більшою, або вивести, що кількість однакова.</h1>
+
+  <script>
+
+    const firstChild = prompt("Введіть ім'я першої дитини");
+    const secondChild = prompt("Введіть ім'я другої дитини");
+    // const firstChildquantityCandies = parseInt(prompt("Введіть кількість цукерок першої дитини"));
+    // const secondChildquantityCandies = parseInt(prompt("Введіть кількість цукерок другої дитини"));
+    const firstChildquantityCandies = parseInt(prompt(`Введіть кількість цукерок ${firstChild}`));
+    const secondChildquantityCandies = parseInt(prompt(`Введіть кількість цукерок ${secondChild}`));
+
+    if (firstChildquantityCandies > secondChildquantityCandies) {
+      document.write(`${firstChild} має більше конфет ніж ${secondChild}`);
+    } else {
+      document.write(`${secondChild} має більше конфет ніж ${firstChild}`);
+    }
+
+    document.write(`Сума чисел = ${sumNumbers} <br/>`);
+    document.write(`Добуток чисел = ${multiplicationNumbers} <br/>`);
+    document.write(`Частка чисел = ${divisionNumbers} <br/>`);
+
+
+  </script>
+
+</body>
+
+</html>
